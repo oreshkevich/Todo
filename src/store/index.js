@@ -6,7 +6,7 @@ export default createStore({
     currentPage: 0,
     pageSize: 5,
     pageCountSize: 1,
-    hiddenPaginationState: true,
+    hiddenPaginationState: false,
     updatePage: '',
     searchText: '',
     visibleTodos: [],
