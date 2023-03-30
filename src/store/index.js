@@ -6,10 +6,9 @@ export default createStore({
     currentPage: 0,
     pageSize: 5,
     pageCountSize: 1,
-    hiddenPaginationState: false,
+    hiddenPaginationState: true,
     updatePage: '',
     searchText: '',
-    visibleTodos: [],
     completed: 'all',
     completedTodos: JSON.parse(window.localStorage.getItem('test'))
       ? JSON.parse(window.localStorage.getItem('test'))

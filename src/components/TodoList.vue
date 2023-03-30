@@ -5,7 +5,7 @@
       <TodoItem :todo="todo" />
       <hr />
     </div>
-    <div v-if="hiddenPaginationState">
+    <div v-if="hiddenPaginationState && pageCountSize">
       <button class="btn-page" :disabled="currentPage === 0" @click="prevPage">Previous</button>
       {{ currentPage + 1 }} of {{ pageCountSize }}
       <button class="btn-page" :disabled="currentPage === pageCountSize - 1" @click="nextPage">Next</button>
